@@ -29,7 +29,7 @@ extension=smaz.so
 ## Function
 
 * smaz\_compress — smaz string compression
-* smaz\_uncompress — smaz string decompression
+* smaz\_decompress — smaz string decompression
 
 ### smaz\_compress — SMAZ compression
 
@@ -50,11 +50,11 @@ SMAZ compression.
 Returns the compressed data or FALSE if an error occurred.
 
 
-### smaz\_uncompress — SMAZ decompression
+### smaz\_decompress — SMAZ decompression
 
 #### Description
 
-string **smaz\_uncompress** ( string _$data_ )
+string **smaz\_decompress** ( string _$data_ )
 
 SMAZ decompression.
 
@@ -74,5 +74,5 @@ Returns the decompressed data or FALSE if an error occurred.
 
 ```php
 $data = smaz_compress('test');
-smaz_uncompress($data);
+smaz_decompress($data);
 ```
